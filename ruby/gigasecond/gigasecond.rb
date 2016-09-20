@@ -1,8 +1,6 @@
 class Gigasecond
-  class << self
 
-    def from()
+    def self.from(time)
+      Time.now
     end
-
-  end
 end
