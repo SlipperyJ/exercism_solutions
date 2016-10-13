@@ -11,8 +11,16 @@ class Squares
     @number_range.map{|x| x**2}.reduce(:+)
   end
 
+  def difference
+    (sum_of_squares - square_of_sum).abs
+  end
+
   private
     def number_range_to_array(number)
-      (1..number).to_a
+      number == 0 ? [0] : (1..number).to_a
     end
+end
+
+module BookKeeping
+  VERSION = 3
 end
