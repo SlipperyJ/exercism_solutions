@@ -1,6 +1,6 @@
 class Squares
   def initialize(number)
-    @number = number
+
     @number_range = number_range_to_array(number)
   end
 
@@ -13,6 +13,6 @@ class Squares
   end
 
   def number_range_to_array(number)
-    (1..@number).to_a
+    (1..number).to_a
   end
 end
